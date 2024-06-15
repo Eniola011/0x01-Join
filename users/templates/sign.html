@@ -1,0 +1,45 @@
+{% load static %}
+
+{% extends 'base.html' %}
+
+{% block title %}Login & Signup{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/sign.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Login Form -->
+    <div class="form-container">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Username" class="input-field" required>
+            <br><br>
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <br><br>
+            <button type="submit" name="login" class="form-button">Login</button>
+        </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Username" class="input-field" required>
+            <br><br>
+            <input type="email" name="email" placeholder="Email" class="input-field" required>
+            <br><br>
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <br><br>
+            <button type="submit" name="signup" class="form-button">Sign Up</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/sign.js' %}"></script>
+{% endblock %}

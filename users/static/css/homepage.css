@@ -1,0 +1,32 @@
+/* homepage.css */
+
+/* Set background image */
+body {
+    background-image: url('static/img/keyhole.jpg');
+    background-size: cover; /* Adjusts the background image size */
+    background-repeat: no-repeat; /* Ensures the background image does not repeat */
+    background-attachment: fixed; /* Fixes the background image position */
+}
+
+/* Style for the container */
+.container {
+    max-width: 800px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a semi-transparent white background */
+    border-radius: 10px; /* Adds rounded corners to the container */
+    margin-top: 50px; /* Adds space from the top */
+}
+
+/* Style for the heading */
+.container h1 {
+    font-size: 3em; /* Adjusts the font size of the heading */
+    color: #333; /* Sets the color of the heading */
+}
+
+/* Style for the paragraph */
+.container p {
+    font-size: 1.5em; /* Adjusts the font size of the paragraph */
+    color: #666; /* Sets the color of the paragraph */
+}
