@@ -3,18 +3,10 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
-<section class="form-box register">
-    <span class="icon-close">
-        <ion-icon name="close"></ion-icon>
-    </span>
-    <h2>Sign Up</h2>
-    <form method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <button type="submit" class="btn">Sign Up</button>
-    </form>
-    <div class="login-register">
-        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-    </div>
-</section>
+<h2>Sign Up</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Sign Up</button>
+</form>
 {% endblock %}
