@@ -10,24 +10,10 @@
     <link rel="icon" href="{% static 'img/icons8-key-16.png' %}" type="image/x-icon">
 </head>
 <body>
-    {% if user.is_authenticated %}
-        <p>Welcome. You are logged in as {{ user.username }} </p>
-    {% else %}
-        <header>
-            <h2 class="logo">Join</h2>
-            <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <button class="btnLogin-popup">Login</button>
-            </nav>
-        </header>
-        <main class="wrapper">
-            {% block content %}
-            {% endblock %}
-        </main>
-    {% endif %}
+    <main class="wrapper">
+        {% block content %}
+        {% endblock %}
+    </main>
     <script src="{% static 'script.js' %}"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
