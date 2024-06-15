@@ -3,10 +3,18 @@
 {% block title %}Log In{% endblock %}
 
 {% block content %}
-<h2>Log In</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Log In</button>
-</form>
+<section class="form-box login">
+    <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+    </span>
+    <h2>Login</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn">Log In</button>
+    </form>
+    <div class="login-register">
+        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+    </div>
+</section>
 {% endblock %}
