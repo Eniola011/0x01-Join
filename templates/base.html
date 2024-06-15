@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Join Project{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
-    <link rel="icon" href="{% static 'accounts/images/icons8-key-16.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" href="{% static 'img/icons8-key-16.png' %}" type="image/x-icon">
 </head>
 <body>
     {% if user.is_authenticated %}
@@ -27,7 +27,7 @@
             {% endblock %}
         </main>
     {% endif %}
-    <script src="{% static 'accounts/js/script.js' %}"></script>
+    <script src="{% static 'script.js' %}"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
